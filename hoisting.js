@@ -5,5 +5,5 @@ var miNombre = "Hector"
 hey()
 
 function hey(){
-    console.log("Hola " miNombre)
+    console.log("Hola " + miNombre)
 }
