@@ -13,8 +13,31 @@ function computer() {
 }
 
 function winningLogic() {
-    player()
-    computer()
+    var computerAction = options[computer()]
+    var playerAction = options[player()]
+
+    if (playerAction == computerAction) {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("IT'S A  D R A W !! !!")
+    } else if (playerAction == "Rock" && computerAction == "Scissors") {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("YOU WON !! !!")
+    } else if (playerAction == "Rock" && computerAction == "Paper") {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("YOU LOST !! !!")
+    } else if (playerAction == "Paper" && computerAction == "Scissors") {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("YOU LOST !! !!")
+    } else if (playerAction == "Paper" && computerAction == "Rock") {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("YOU WON !! !!")
+    } else if (playerAction == "Scissors" && computerAction == "Rock") {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("YOU LOST !! !!")
+    } else if (playerAction == "Scissors" && computerAction == "Paper") {
+        console.log(`You picked ${playerAction} vs ${computerAction}`)
+        console.log("YOU WON !! !!")
+    }
 }
 
 winningLogic()
